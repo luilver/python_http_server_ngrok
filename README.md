@@ -18,7 +18,8 @@ Edit your local files `.env` and `ngrok/ngrok.yml`
 ### Dot ENV file
 
 Replace `/path/to/local/folder/to/be/shared` with your desired filesystem folder
-to be shared. Ex: `/home/luilver/bin` will share all my scripts.
+to be shared. Ex: `/home/luilver/bin` will share all my scripts # As previously
+shown ( :
 
 ### Nogrok YAML file
 
