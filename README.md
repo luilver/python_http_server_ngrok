@@ -2,6 +2,8 @@
 
 An easy way to share your local files quickly
 
+[![Screenshot-2023-09-28-at-19-04-28.png](https://i.postimg.cc/T1whGhQf/Screenshot-2023-09-28-at-19-04-28.png)](https://postimg.cc/9R6cYmvn)
+
 ## Setup
 
 Run the following command:
