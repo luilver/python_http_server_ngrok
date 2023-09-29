@@ -1,0 +1,29 @@
+version: '3.9'
+
+services:
+  ngrok:
+    command:
+      - "start"
+      - "python_http_server"
+      - "--config"
+      - "/etc/ngrok.yml"
+      - "--log"
+      - "stdout"
+    depends_on:
+      -  python
+    image: ngrok/ngrok
+    restart: unless-stopped
+    volumes:
+      - ./ngrok/ngrok.yml:/etc/ngrok.yml
+  python:
+    command:
+      - /bin/bash
+      - -c
+      - |
+        cd /mnt
+        python3 -m http.server
+    image: python:latest
+    ports:
+      - 8000:8000
+    volumes:
+      - ${SHARED_FOLDER}:/mnt

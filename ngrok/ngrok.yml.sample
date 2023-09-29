@@ -1,0 +1,6 @@
+version: 2
+authtoken: your_auth_token_here
+tunnels:
+  python_http_server:
+    proto: http
+    addr: python:8000
